@@ -4,7 +4,7 @@
 
 ## 🚀 Visão Geral do Projeto
 
-Este repositório contém o desenvolvimento de um **Chatbot educacional** integrado com um **Dashboard de dados de segurança**, apelidado de "NetSafe". Nosso objetivo é democratizar o acesso a informações essenciais de segurança digital, tornando conceitos complexos mais acessíveis e a proteção online uma realidade para todos.
+Este repositório contém o desenvolvimento de um **Chatbot** integrado com um **Dashboard de dados de segurança**, apelidado de "NetSafe". Nosso objetivo é democratizar o acesso a informações essenciais de segurança digital, tornando conceitos complexos mais acessíveis e a proteção online uma realidade para todos.
 
 O projeto foi desenvolvido no contexto da disciplina de **Interação Humano-Computador (IHC)**, focando em uma experiência de usuário intuitiva, informativa e engajadora.
 
@@ -12,7 +12,7 @@ O projeto foi desenvolvido no contexto da disciplina de **Interação Humano-Com
 
 ### **🧩 Contexto com o Projeto Aegis**
 
-Este projeto "NetSafe" é uma iniciativa **complementar/parte integrante** do **Projeto Aegis**. O Projeto Aegis visa a [**Desenvolver um Painel de Inteligência de Ameaças que busca resolver o problema da fragmentação de informações no cenário de cibersegurança. O projeto consiste em um dashboard analítico que irá coletar, processar e visualizar dados de fontes públicas e confiáveis sobre o cenário atual de riscos digitais. O objetivo é centralizar informações críticas e apresentá-las de forma clara e intuitiva, permitindo que usuários possam compreender melhor as ameaças e tendências do mundo da cibersegurança.**].
+Este projeto "NetSafe" é uma iniciativa **complementar/parte integrante** do **Projeto Aegis**. O Projeto Aegis visa a **Desenvolver um Painel de Inteligência de Ameaças que busca resolver o problema da fragmentação de informações no cenário de cibersegurança. O projeto consiste em um dashboard analítico que irá coletar, processar e visualizar dados de fontes públicas e confiáveis sobre o cenário atual de riscos digitais. O objetivo é centralizar informações críticas e apresentá-las de forma clara e intuitiva, permitindo que usuários possam compreender melhor as ameaças e tendências do mundo da cibersegurança.**.
 
 Nosso dashboard e chatbot servem como a [**Informações confiáveis sobre o Mundo Digital voltado a segurança das informações pessoais e análise de vulnerabilidades, conseguindo abranger desde de pessoas leigas no assunto quantos especialistas**], fornecendo dados atualizados sobre ameaças e vulnerabilidades, e oferecendo suporte interativo para dúvidas comuns. Ele atua como um pilar fundamental na estratégia de conscientização e prevenção problemas relacionados a falta informação sobre segurança digital.
 
@@ -48,6 +48,7 @@ O principal objetivo de IHC deste projeto é criar uma interface que seja:
 * **HTML5:** Estrutura base da página e do dashboard.
 * **CSS3:** Estilização e responsividade, incluindo o tema escuro.
 * **JavaScript (ES6+):** Lógica do dashboard (simulação de dados, interatividade) e funcionalidade do chatbot.
+* **Python :** Tratamento de Dados.
 
 ## 📁 Estrutura do Repositório
 
