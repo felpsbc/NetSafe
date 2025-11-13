@@ -4,7 +4,7 @@
 
 ## 🚀 Visão Geral do Projeto
 
-Este repositório contém o desenvolvimento de um **Dashboard Interativo de Cibersegurança** integrado com um **Chatbot educacional**, apelidado de "NetSafe". Nosso objetivo é democratizar o acesso a informações essenciais de segurança digital, tornando conceitos complexos mais acessíveis e a proteção online uma realidade para todos.
+Este repositório contém o desenvolvimento de um **Chatbot educacional** integrado com um **Dashboard de dados de segurança**, apelidado de "NetSafe". Nosso objetivo é democratizar o acesso a informações essenciais de segurança digital, tornando conceitos complexos mais acessíveis e a proteção online uma realidade para todos.
 
 O projeto foi desenvolvido no contexto da disciplina de **Interação Humano-Computador (IHC)**, focando em uma experiência de usuário intuitiva, informativa e engajadora.
 
@@ -12,17 +12,16 @@ O projeto foi desenvolvido no contexto da disciplina de **Interação Humano-Com
 
 ### **🧩 Contexto com o Projeto Aegis**
 
-Este projeto "NetSafe" é uma iniciativa **complementar/parte integrante** do **Projeto Aegis**. O Projeto Aegis visa a [**BREVE DESCRIÇÃO DO PROJETO AEGIS - Ex: "melhorar a postura de segurança digital de pequenas e médias empresas"**].
+Este projeto "NetSafe" é uma iniciativa **complementar/parte integrante** do **Projeto Aegis**. O Projeto Aegis visa a [**Desenvolver um Painel de Inteligência de Ameaças que busca resolver o problema da fragmentação de informações no cenário de cibersegurança. O projeto consiste em um dashboard analítico que irá coletar, processar e visualizar dados de fontes públicas e confiáveis sobre o cenário atual de riscos digitais. O objetivo é centralizar informações críticas e apresentá-las de forma clara e intuitiva, permitindo que usuários possam compreender melhor as ameaças e tendências do mundo da cibersegurança.**].
 
-Nosso dashboard e chatbot servem como a [**FUNÇÃO ESPECÍFICA NO AEGIS - Ex: "ferramenta educacional primária para usuários finais"**], fornecendo dados atualizados sobre ameaças e vulnerabilidades, e oferecendo suporte interativo para dúvidas comuns. Ele atua como um pilar fundamental na estratégia de conscientização e prevenção do Aegis.
+Nosso dashboard e chatbot servem como a [**Informações confiáveis sobre o Mundo Digital voltado a segurança das informações pessoais e análise de vulnerabilidades, conseguindo abranger desde de pessoas leigas no assunto quantos especialistas**], fornecendo dados atualizados sobre ameaças e vulnerabilidades, e oferecendo suporte interativo para dúvidas comuns. Ele atua como um pilar fundamental na estratégia de conscientização e prevenção problemas relacionados a falta informação sobre segurança digital.
 
-[**OPCIONAL: LINK PARA O REPOSITÓRIO OU DOCUMENTAÇÃO DO PROJETO AEGIS**]
-- [Repositório Principal do Projeto Aegis]([https://github.com/SeuUsuario/Projeto-Aegis](https://github.com/vrsmarcos26/PI1-Project-Aegis))
+- [Repositório Principal do Projeto Aegis](https://github.com/vrsmarcos26/PI1-Project-Aegis/tree/main)
 - [Documentação Oficial do Projeto Aegis](LINK PARA REPOSITORIO)
 
 ---
-
 ## ✨ Funcionalidades Principais
+
 
 * **Dashboard de Ameaças:** Visualização em tempo real (simulado para o protótipo) de:
     * Principais Ameaças do Mês (Phishing, Ransomware, Spyware).
