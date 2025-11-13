@@ -17,8 +17,8 @@ Este projeto "NetSafe" é uma iniciativa **complementar/parte integrante** do **
 Nosso dashboard e chatbot servem como a [**FUNÇÃO ESPECÍFICA NO AEGIS - Ex: "ferramenta educacional primária para usuários finais"**], fornecendo dados atualizados sobre ameaças e vulnerabilidades, e oferecendo suporte interativo para dúvidas comuns. Ele atua como um pilar fundamental na estratégia de conscientização e prevenção do Aegis.
 
 [**OPCIONAL: LINK PARA O REPOSITÓRIO OU DOCUMENTAÇÃO DO PROJETO AEGIS**]
-- [Repositório Principal do Projeto Aegis](https://github.com/SeuUsuario/Projeto-Aegis)
-- [Documentação Oficial do Projeto Aegis](https://docs.aegisproject.com)
+- [Repositório Principal do Projeto Aegis]([https://github.com/SeuUsuario/Projeto-Aegis](https://github.com/vrsmarcos26/PI1-Project-Aegis))
+- [Documentação Oficial do Projeto Aegis](LINK PARA REPOSITORIO)
 
 ---
 
