@@ -1,6 +1,6 @@
 # 🛡️ NetSafe: Dashboard e Chatbot de Cibersegurança
 
-![Mascote NetSafe](NetSafe.jpg)
+![Mascote NetSafe](Assets/NetSafe.jpg)
 
 ## 🚀 Visão Geral do Projeto
 
