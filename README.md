@@ -19,7 +19,7 @@ O Projeto Aegis visa a **Desenvolver um Painel de Inteligência de Ameaças que 
 Nosso dashboard e chatbot servem como a **Informações confiáveis sobre o Mundo Digital voltado a segurança das informações pessoais e análise de vulnerabilidades, conseguindo abranger desde de pessoas leigas no assunto quantos especialistas**, fornecendo dados atualizados sobre ameaças e vulnerabilidades, e oferecendo suporte interativo para dúvidas comuns. Ele atua como um pilar fundamental na estratégia de conscientização e prevenção problemas relacionados a falta informação sobre segurança digital.
 
 - [Repositório Principal do Projeto Aegis](https://github.com/vrsmarcos26/PI1-Project-Aegis/tree/main)
-- [Documentação Oficial do Projeto Aegis][([LINK PARA REPOSITORIO](https://github.com/vrsmarcos26/PI1-Project-Aegis/blob/main/docs/Entregáveis/Un2/Plano%20de%20Projeto%20-%20Project%20Aegis.pdf))]
+- [Documentação Oficial do Projeto Aegis](https://github.com/vrsmarcos26/PI1-Project-Aegis/blob/main/docs/Entregáveis/Un2/Plano%20de%20Projeto%20-%20Project%20Aegis.pdf)
 
 ---
 ## ✨ Funcionalidades Principais
