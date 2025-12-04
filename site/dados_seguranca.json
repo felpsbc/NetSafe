@@ -1,0 +1,102 @@
+[
+  {
+    "pergunta": "O que é segurança digital?",
+    "resposta": "Segurança digital, ou cibersegurança, é a prática de proteger computadores, servidores, dispositivos móveis, sistemas eletrônicos, redes e dados contra ataques maliciosos."
+  },
+  {
+    "pergunta": "O que é uma CVE?",
+    "resposta": "CVE (Common Vulnerabilities and Exposures) é uma lista pública de falhas de segurança conhecidas. Cada CVE tem um ID único (ex: CVE-2025-1234) para ajudar profissionais a identificar e corrigir riscos."
+  },
+  {
+    "pergunta": "O que é Phishing?",
+    "resposta": "Phishing é um crime cibernético onde atacantes se passam por instituições legítimas (bancos, empresas) via e-mail ou SMS para roubar senhas e dados financeiros."
+  },
+  {
+    "pergunta": "O que é Ransomware?",
+    "resposta": "Ransomware é um tipo de malware que sequestra os dados da vítima (criptografa os arquivos) e exige um pagamento (resgate) para devolver o acesso."
+  },
+  {
+    "pergunta": "Como prevenir Ransomware?",
+    "resposta": "Para evitar Ransomware: 1. Mantenha backups offline. 2. Não clique em links suspeitos. 3. Mantenha o sistema atualizado. 4. Use autenticação de dois fatores (2FA)."
+  },
+  {
+    "pergunta": "O que é Engenharia Social?",
+    "resposta": "É a técnica de manipulação psicológica usada por criminosos para enganar pessoas e fazê-las revelar informações confidenciais ou realizar ações que comprometem a segurança."
+  },
+  {
+    "pergunta": "O que é um ataque DDoS?",
+    "resposta": "DDoS (Distributed Denial of Service) é um ataque que tenta tornar um serviço online indisponível, sobrecarregando-o com tráfego vindo de múltiplas fontes (botnets)."
+  },
+  {
+    "pergunta": "O que é Zero Day?",
+    "resposta": "Uma vulnerabilidade Zero Day é uma falha de segurança recém-descoberta que os desenvolvedores ainda não corrigiram (tiveram 'zero dias' para criar o patch)."
+  },
+  {
+    "pergunta": "O que é LGPD?",
+    "resposta": "A Lei Geral de Proteção de Dados (LGPD) é a legislação brasileira que regula as atividades de tratamento de dados pessoais, visando proteger a privacidade dos cidadãos."
+  },
+  {
+    "pergunta": "O que é SQL Injection?",
+    "resposta": "É uma técnica de ataque onde código SQL malicioso é inserido em campos de entrada de um site para manipular o banco de dados e acessar informações protegidas."
+  },
+  {
+    "pergunta": "O que é 2FA ou MFA?",
+    "resposta": "Autenticação de Dois Fatores (2FA) ou Múltiplos Fatores (MFA) adiciona uma camada extra de segurança, exigindo não apenas a senha, mas também um código temporário ou biometria."
+  },
+  {
+    "pergunta": "O que é VPN?",
+    "resposta": "Uma VPN (Rede Privada Virtual) cria uma conexão segura e criptografada sobre uma rede menos segura, como a internet, protegendo seus dados e ocultando seu endereço IP."
+  },
+  {
+    "pergunta": "O que é Brute Force?",
+    "resposta": "Ataque de força bruta é um método de tentativa e erro usado para decifrar dados sensíveis, como senhas, testando todas as combinações possíveis até acertar."
+  },
+  {
+    "pergunta": "Qual setor é o mais atacado hoje?",
+    "resposta": "Segundo o Painel Aegis, o setor Governamental (Government) é atualmente o mais atacado, seguido por setores financeiros e de saúde."
+  },
+  {
+    "pergunta": "Qual a ameaça mais comum no painel?",
+    "resposta": "Atualmente, o Phishing é a ameaça mais comum registrada no nosso painel de inteligência."
+  },
+  {
+    "pergunta": "Quantas novas vulnerabilidades foram detectadas?",
+    "resposta": "O painel Aegis registra 2.650 novas vulnerabilidades detectadas nos últimos 30 dias."
+  },
+  {
+    "pergunta": "Quantas contas foram vazadas?",
+    "resposta": "Nossa base de dados indica aproximadamente 3.8 Milhões de contas vazadas recentemente."
+  },
+  {
+    "pergunta": "Quem desenvolveu o Project Aegis?",
+    "resposta": "O Aegis foi desenvolvido por estudantes de Ciência da Computação do CEUB: Marcos Vinícius (Líder), Felipe Barcelos (IA), Eduardo Uchoa (Back-end), João Marcelo e Davi Maia (QA)."
+  },
+  {
+    "pergunta": "Qual o objetivo do Project Aegis?",
+    "resposta": "O objetivo é centralizar informações críticas de segurança (CVEs, vazamentos) em um dashboard intuitivo para facilitar a tomada de decisão de gestores e profissionais de TI."
+  },
+  {
+    "pergunta": "O que é um White Hat?",
+    "resposta": "White Hat é um hacker ético que usa suas habilidades para encontrar falhas de segurança e ajudar empresas a corrigi-las, ao contrário dos Black Hats (criminosos)."
+  },
+  {
+    "pergunta": "Como criar uma senha forte?",
+    "resposta": "Uma senha forte deve ter pelo menos 12 caracteres, incluir letras maiúsculas, minúsculas, números e símbolos, e não deve conter informações pessoais óbvias."
+  },
+  {
+    "pergunta": "O que é Criptografia?",
+    "resposta": "É o processo de codificar informações para que apenas pessoas autorizadas (que possuem a chave de decodificação) consigam lê-las."
+  },
+  {
+    "pergunta": "O que é Firewall?",
+    "resposta": "Um firewall é um sistema de segurança de rede que monitora e controla o tráfego de entrada e saída com base em regras de segurança predeterminadas."
+  },
+  {
+    "pergunta": "O que é Botnet?",
+    "resposta": "Uma botnet é uma rede de computadores infectados (zumbis) controlados remotamente por um invasor para realizar ataques em massa, como DDoS."
+  },
+  {
+    "pergunta": "Quais países são as maiores origens de ataque?",
+    "resposta": "Segundo dados do AbuseIPDB no nosso painel, os Estados Unidos e o Brasil figuram entre as principais origens de tráfego malicioso recentemente."
+  }
+]
