@@ -55,7 +55,7 @@ Este módulo foi desenvolvido com foco nos princípios de Design Centrado no Usu
 
 | Membro | Papel no Projeto NetSafe |
 | :--- | :--- |
-| 💻 **Felipe Barcelos** | **Líder do Projeto NetSafe / Desenvolvedor Líder de IA & Integração Front-End** |
+| 💻 **[Felipe Barcelos](https://github.com/felpsbc)** | **Líder do Projeto NetSafe / Desenvolvedor Líder de IA & Integração Front-End** |
 | 👑 **[Marcos Vinícius](https://github.com/vrsmarcos26)** | **Arquiteto de Dados / Desenvolvedor Full-Stack** |
 | 🧪 **[João Marcelo](https://github.com/joaomarcelo11)** | **Tester de QA / Documentação Técnica (Principal)** |
 | 🗃️ **[João Luiz](https://github.com/Joao0410)** | **Tester de QA / Documentação Técnica (Secundário)** |
