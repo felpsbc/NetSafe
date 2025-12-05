@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-  <img src="site/Assets/Mascote.jpg" alt="Mascote NetSafe" width="300">
+  <img src="site/Assets/Mascote.jpg" alt="Mascote NetSafe" width="600">
 </div>
 
 ---
