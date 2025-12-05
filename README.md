@@ -72,4 +72,5 @@ Este módulo foi desenvolvido com foco nos princípios de Design Centrado no Usu
 ## 📝 5. Licença
 
 Este projeto é um módulo do Project Aegis e segue a mesma licença MIT.
+
 Desenvolvido no contexto acadêmico do CEUB - 2025.
