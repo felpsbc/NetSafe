@@ -7,10 +7,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 CORS(app)
 
-# =====================================================
-# 🔑 COLE SUA CHAVE DO GMAIL PESSOAL AQUI
-# =====================================================
-my_api_key = "AIzaSyB4V2OPMBQmBwRfziFZS1VoCA_IUFjtl08"
+my_api_key = ""
 
 genai.configure(api_key=my_api_key)
 
@@ -29,27 +26,43 @@ def chat():
     dados = request.json
     mensagem = dados.get('message', '')
     
-    # 1. RAG (Busca no JSON)
+    # 1. Busca no JSON (RAG)
     contexto = ""
     for item in base_conhecimento:
+        # Verifica se alguma palavra chave da pergunta do banco está na mensagem do usuário
         if any(palavra in mensagem.lower() for palavra in item['pergunta'].lower().split()):
-            contexto += f"Info: {item['resposta']}\n"
+            contexto += f"DADO DO PROJETO: {item['resposta']}\n"
     
     if not contexto:
-        contexto = "Sem dados específicos. Use conhecimento técnico geral de segurança."
+        contexto = "Nenhum dado específico no banco interno."
 
-    # 2. Prompt para a IA
-    prompt = f"Aja como NetSafe, o chatbot do Project Aegis. Contexto: {contexto}. Pergunta: {mensagem}. Responda em Português de forma curta."
+    # 2. PROMPT AJUSTADO (Permitindo equipe e orientadores)
+    prompt = f"""
+    Você é o NetSafe, analista do Project Aegis.
+
+    CONTEXTO DO BANCO DE DADOS:
+    {contexto}
+
+    PERGUNTA DO USUÁRIO:
+    "{mensagem}"
+
+    DIRETRIZES DE RESPOSTA:
+    1. Priorize SEMPRE as informações vindas do "CONTEXTO DO BANCO DE DADOS" acima.
+    2. TÓPICOS PERMITIDOS: Cibersegurança, TI, Vulnerabilidades, O Painel Aegis, Equipe de Desenvolvimento e Professores Orientadores (Contexto Acadêmico).
+    3. TÓPICOS PROIBIDOS: Assuntos que não tenham nada a ver com o projeto ou tecnologia (ex: receitas, futebol, política, fofocas).
+    
+    Se a pergunta for permitida, responda de forma curta e cordial em PT-BR.
+    Se for proibida, diga apenas: "Só posso responder sobre o Project Aegis e Segurança."
+    """
     
     try:
-        # Modelo atualizado que funcionou na sua chave
         model = genai.GenerativeModel('models/gemini-2.0-flash') 
         response = model.generate_content(prompt)
         return jsonify({"response": response.text})
         
     except Exception as e:
         print(f"ERRO: {e}") 
-        return jsonify({"response": "Erro de conexão com a IA. Verifique o terminal."})
+        return jsonify({"response": "Erro de conexão."})
 
 if __name__ == '__main__':
     print("🛡️ NetSafe Backend Rodando...")

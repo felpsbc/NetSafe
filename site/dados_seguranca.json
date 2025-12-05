@@ -33,7 +33,7 @@
   },
   {
     "pergunta": "O que é LGPD?",
-    "resposta": "A Lei Geral de Proteção de Dados (LGPD) é a legislação brasileira que regula as atividades de tratamento de dados pessoais, visando proteger a privacidade dos cidadãos."
+    "resposta": "A Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) é a legislação brasileira que regula as atividades de tratamento de dados pessoais, visando proteger a privacidade dos cidadãos."
   },
   {
     "pergunta": "O que é SQL Injection?",
@@ -98,5 +98,97 @@
   {
     "pergunta": "Quais países são as maiores origens de ataque?",
     "resposta": "Segundo dados do AbuseIPDB no nosso painel, os Estados Unidos e o Brasil figuram entre as principais origens de tráfego malicioso recentemente."
+  },
+  {
+    "pergunta": "O que é Dado Pessoal?",
+    "resposta": "Segundo a LGPD, dado pessoal é qualquer informação relacionada a pessoa natural identificada ou identificável (Art. 5º, I)."
+  },
+  {
+    "pergunta": "O que é Dado Sensível?",
+    "resposta": "Dado pessoal sensível diz respeito à origem racial ou étnica, convicção religiosa, opinião política, saúde, vida sexual, dado genético ou biométrico (Art. 5º, II)."
+  },
+  {
+    "pergunta": "Quem é o Titular de dados?",
+    "resposta": "O titular é a pessoa natural (física) a quem se referem os dados pessoais que são objeto de tratamento (Art. 5º, V)."
+  },
+  {
+    "pergunta": "Quem é o Controlador na LGPD?",
+    "resposta": "Controlador é a pessoa natural ou jurídica a quem competem as decisões referentes ao tratamento de dados pessoais (Art. 5º, VI)."
+  },
+  {
+    "pergunta": "Quem é o Operador na LGPD?",
+    "resposta": "Operador é a pessoa natural ou jurídica que realiza o tratamento de dados pessoais em nome do controlador (Art. 5º, VII)."
+  },
+  {
+    "pergunta": "Quem é o Encarregado ou DPO?",
+    "resposta": "O Encarregado (Data Protection Officer) é a pessoa indicada para atuar como canal de comunicação entre o controlador, os titulares e a Autoridade Nacional (ANPD)."
+  },
+  {
+    "pergunta": "Quais são os princípios da LGPD?",
+    "resposta": "Os princípios incluem: Finalidade, Adequação, Necessidade, Livre Acesso, Qualidade dos Dados, Transparência, Segurança, Prevenção, Não Discriminação e Responsabilização."
+  },
+  {
+    "pergunta": "Quais são as bases legais da LGPD?",
+    "resposta": "As principais bases legais são: Consentimento, Obrigação Legal, Execução de Contrato, Tutela da Saúde, Legítimo Interesse e Proteção do Crédito, entre outras."
+  },
+  {
+    "pergunta": "Quais são os direitos do titular?",
+    "resposta": "O titular tem direito à confirmação do tratamento, acesso aos dados, correção, anonimização, portabilidade, eliminação e revogação do consentimento (Art. 18)."
+  },
+  {
+    "pergunta": "Quais as multas da LGPD?",
+    "resposta": "As sanções incluem advertência, bloqueio dos dados e multa simples de até 2% do faturamento, limitada a R$ 50 milhões por infração."
+  },
+  {
+    "pergunta": "O que é Pentest?",
+    "resposta": "Pentest (Teste de Penetração) é uma simulação controlada de ataque cibernético realizada por profissionais para identificar vulnerabilidades em sistemas e redes."
+  },
+  {
+    "pergunta": "O que é um Malware?",
+    "resposta": "Malware é um software malicioso projetado para causar danos, roubar informações ou comprometer a segurança de sistemas computacionais."
+  },
+  {
+    "pergunta": "O que é um Keylogger?",
+    "resposta": "Keylogger é um tipo de malware que registra as teclas digitadas pelo usuário, permitindo que atacantes capturem senhas e outras informações sensíveis."
+  },
+  {
+    "pergunta": "O que é Spoofing?",
+    "resposta": "Spoofing é uma técnica usada por atacantes para falsificar a identidade de um dispositivo ou usuário, enganando sistemas de segurança e usuários legítimos."
+  },
+  {
+    "pergunta": "O que é um Rootkit?",
+    "resposta": "Rootkit é um conjunto de ferramentas de software que permite a um invasor obter acesso privilegiado a um computador ou rede, ocultando sua presença."  
+  },
+  {
+    "pergunta": "Quem é Kadidja Valéria?",
+    "resposta": "Kadidja Valéria é a professora orientadora do Project Aegis, especialista em Interação Humano-Computador e professora do curso de Ciência da Computação do CEUB."
+  },
+  {
+    "pergunta": "Quem é Alan Cooper?",
+    "resposta": "Alan Cooper é conhecido como o 'pai da programação visual' e é autor do livro 'The Inmates Are Running the Asylum', que aborda design centrado no usuário e usabilidade em software."
+  },
+  {
+    "pergunta": "O que é um Trojan?",
+    "resposta": "Trojan (Cavalo de Troia) é um tipo de malware que se disfarça como um programa legítimo para enganar os usuários e obter acesso não autorizado a sistemas."
+  },
+  {
+    "pergunta": "O que é Engenharia Reversa?",
+    "resposta": "Engenharia Reversa é o processo de analisar um sistema, software ou hardware para entender seu funcionamento interno, geralmente para identificar vulnerabilidades ou criar versões compatíveis."
+  },
+  {
+    "pergunta": "O que é um Exploit?",
+    "resposta": "Exploit é um pedaço de software, dados ou sequência de comandos que aproveita uma vulnerabilidade em um sistema para causar um comportamento indesejado ou não intencionado."
+  },
+  {
+    "pergunta": "O que é um Honeypot?",
+    "resposta": "Honeypot é um sistema ou recurso de rede configurado para atrair atacantes, permitindo que os administradores monitorem suas atividades e aprendam sobre suas técnicas."
+  },
+  {
+    "pergunta": "O que é um certificado digital?",
+    "resposta": "Um certificado digital é um arquivo eletrônico que comprova a identidade de uma pessoa ou entidade na internet, garantindo a segurança das comunicações online."
+  },
+  {
+    "pergunta": "O que é um ataque Man-in-the-Middle (MitM)?",
+    "resposta": "Um ataque Man-in-the-Middle (MitM) ocorre quando um atacante intercepta e possivelmente altera a comunicação entre duas partes sem que elas saibam, comprometendo a segurança dos dados transmitidos."
   }
 ]

@@ -1,35 +1,40 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. Injeta o HTML do Chat (Com botão de tema novo)
+    
+    const caminhoImagemMascote = "Assets/Mascote.jpg"; 
+
+    // 1. Injeta o HTML do Chat
     const chatHTML = `
         <button class="netsafe-trigger" onclick="toggleChat()">
-            <i class="fas fa-shield-alt"></i> <span class="netsafe-label">NetSafe AI</span>
+            <i class="fas fa-shield-alt"></i> 
+            <span class="netsafe-label">NetSafe AI</span>
         </button>
         
-        <div class="netsafe-window" id="netSafeWindow" data-theme="dark">
+        <div class="netsafe-window" id="netSafeWindow">
             <div class="chat-header">
                 <div class="header-info">
-                    <div class="bot-avatar"><i class="fas fa-robot"></i></div>
+                    <div class="bot-avatar">
+                        <img src="${caminhoImagemMascote}" alt="Mascote NetSafe" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                    </div>
                     <div class="header-text"><h3>NetSafe AI</h3></div>
                 </div>
-                <div class="header-actions">
-                    <button class="icon-btn" onclick="toggleTheme()" title="Mudar Tema">
-                        <i class="fas fa-sun" id="themeIcon"></i>
-                    </button>
-                    <button class="icon-btn" onclick="toggleChat()">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
+                <button class="close-btn" onclick="toggleChat()"><i class="fas fa-times"></i></button>
             </div>
             
             <div class="chat-body" id="chatBody">
                 <div class="message bot-msg">
                     Olá! Sou o NetSafe. 🛡️<br>
-                    Posso ajudar com segurança ou dados do painel.
-                </div>
+                    O meu tema segue o do site principal!
+
+                    <div class="suggestions" style="margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap;">
+                        <button class="chip" onclick="sendQuickMsg('O que é uma CVE?')" style="background:transparent; border:1px solid var(--accent-color); color:var(--accent-color); padding:5px 12px; border-radius:20px; font-size:12px; cursor:pointer;">O que é CVE?</button>
+                        <button class="chip" onclick="sendQuickMsg('Qual o setor mais atacado?')" style="background:transparent; border:1px solid var(--accent-color); color:var(--accent-color); padding:5px 12px; border-radius:20px; font-size:12px; cursor:pointer;">Setor Crítico</button>
+                        <button class="chip" onclick="sendQuickMsg('Quem são os criadores do projeto?')" style="background:transparent; border:1px solid var(--accent-color); color:var(--accent-color); padding:5px 12px; border-radius:20px; font-size:12px; cursor:pointer;">Criadores</button>
+                    </div>
+                    </div>
             </div>
             
             <div class="chat-footer">
-                <input type="text" class="chat-input" id="userInput" placeholder="Digite sua dúvida..." onkeypress="handleKeyPress(event)">
+                <input type="text" class="chat-input" id="userInput" placeholder="Digite..." onkeypress="handleKeyPress(event)">
                 <button class="send-btn" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
             </div>
         </div>
@@ -38,36 +43,39 @@ document.addEventListener("DOMContentLoaded", function() {
     const div = document.createElement('div');
     div.innerHTML = chatHTML;
     document.body.appendChild(div);
+
+    // Lógica do botão de tema da página principal
+    const pageButtons = document.querySelectorAll('.btn-control');
+    pageButtons.forEach(btn => {
+        if(btn.innerText.includes('Modo') || btn.innerText.includes('Escuro')) {
+            btn.onclick = function() {
+                document.body.classList.toggle('light-mode');
+                if (document.body.classList.contains('light-mode')) {
+                    btn.innerText = "Modo Escuro";
+                } else {
+                    btn.innerText = "Modo Claro";
+                }
+            };
+        }
+    });
 });
 
-// --- Lógica de Interface ---
+// --- Funções Lógicas ---
 
 function toggleChat() {
     const w = document.getElementById('netSafeWindow');
     w.style.display = (w.style.display === 'flex') ? 'none' : 'flex';
 }
 
-function toggleTheme() {
-    const windowEl = document.getElementById('netSafeWindow');
-    const iconEl = document.getElementById('themeIcon');
-    
-    // Verifica qual é o tema atual
-    const currentTheme = windowEl.getAttribute('data-theme');
-    
-    if (currentTheme === 'dark') {
-        // Muda para CLARO
-        windowEl.setAttribute('data-theme', 'light');
-        iconEl.className = 'fas fa-moon'; // Troca ícone para Lua
-    } else {
-        // Muda para ESCURO
-        windowEl.setAttribute('data-theme', 'dark');
-        iconEl.className = 'fas fa-sun'; // Troca ícone para Sol
-    }
+// FUNÇÃO NOVA PARA ENVIAR A SUGESTÃO AO CLICAR
+function sendQuickMsg(text) {
+    const input = document.getElementById('userInput');
+    input.value = text; // Coloca o texto no input
+    sendMessage(); // Envia automaticamente
 }
 
 function handleKeyPress(e) { if (e.key === 'Enter') sendMessage(); }
 
-// --- Lógica de Envio (Igual ao anterior) ---
 async function sendMessage() {
     const input = document.getElementById('userInput');
     const text = input.value.trim();
