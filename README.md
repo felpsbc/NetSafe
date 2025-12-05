@@ -2,15 +2,6 @@
   🛡️ NetSafe AI: Assistente Inteligente do Project Aegis
 </h1>
 
-<p align="center">
-  <a href="#-descrição">Descrição</a> •
-  <a href="#-objetivos-e-funcionalidades">Objetivos</a> •
-  <a href="#-arquitetura-e-tecnologias">Tecnologias</a> •
-  <a href="#-instalação-e-uso">Instalação</a> •
-  <a href="#-equipe-e-ihc">Equipe e IHC</a> •
-  <a href="#-licença">Licença</a>
-</p>
-
 ---
 
 ## 🚀 1. Descrição do Projeto
