@@ -21,11 +21,14 @@ Este projeto foi desenvolvido com foco na disciplina de **Interação Humano-Com
 ### Funcionalidades Principais:
 
 ✅ **Processamento de Linguagem Natural (NLP):** Utiliza o modelo **Google Gemini 2.0 Flash** para entender perguntas complexas em português e gerar respostas coerentes.
+
 ✅ **RAG (Retrieval-Augmented Generation):** Implementa um sistema de "Geração Aumentada por Recuperação". O chatbot consulta uma base de conhecimento interna (`dados_seguranca.json`) sobre o projeto antes de responder, garantindo que as informações sejam precisas e específicas do Aegis, reduzindo alucinações da IA.
+
 ✅ **Interface Inclusiva:**
   - **Botão Flutuante:** Acesso rápido em qualquer tela.
   - **Sugestões de Perguntas (Chips):** Reduz a carga cognitiva para usuários iniciantes.
   - **Sincronização de Tema:** O modo claro/escuro do chat se adapta automaticamente ao tema do painel principal, garantindo consistência visual.
+  - 
 ✅ **Guardrails de Segurança:** O prompt da IA foi projetado para recusar perguntas fora do contexto (como culinária ou esportes), mantendo o foco estrito em cibersegurança e no projeto.
 
 ---
