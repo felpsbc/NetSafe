@@ -2,6 +2,10 @@
   🛡️ NetSafe AI: Assistente Inteligente do Project Aegis
 </h1>
 
+<div align="center">
+  <img src="site/Assets/Mascote.jpg" alt="Mascote NetSafe" width="300">
+</div>
+
 ---
 
 ## 🚀 1. Descrição do Projeto
