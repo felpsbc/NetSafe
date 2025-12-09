@@ -17,7 +17,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                     <div class="header-text"><h3>NetSafe AI</h3></div>
                 </div>
-                <button class="close-btn" onclick="toggleChat()"><i class="fas fa-times"></i></button>
+                
+                <div class="header-actions-container">
+                    <button class="theme-btn" onclick="toggleThemeChat()" title="Alternar Tema">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+
+                    <button class="close-btn" onclick="toggleChat()"><i class="fas fa-times"></i></button>
+                </div>
             </div>
             
             <div class="chat-body" id="chatBody">
@@ -30,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <button class="chip" onclick="sendQuickMsg('Qual o setor mais atacado?')" style="background:transparent; border:1px solid var(--accent-color); color:var(--accent-color); padding:5px 12px; border-radius:20px; font-size:12px; cursor:pointer;">Setor Crítico</button>
                         <button class="chip" onclick="sendQuickMsg('Quem são os criadores do projeto?')" style="background:transparent; border:1px solid var(--accent-color); color:var(--accent-color); padding:5px 12px; border-radius:20px; font-size:12px; cursor:pointer;">Criadores</button>
                     </div>
-                    </div>
+                </div>
             </div>
             
             <div class="chat-footer">
@@ -44,18 +51,11 @@ document.addEventListener("DOMContentLoaded", function() {
     div.innerHTML = chatHTML;
     document.body.appendChild(div);
 
-    // Lógica do botão de tema da página principal
+    // Sincroniza botões da página principal
     const pageButtons = document.querySelectorAll('.btn-control');
     pageButtons.forEach(btn => {
         if(btn.innerText.includes('Modo') || btn.innerText.includes('Escuro')) {
-            btn.onclick = function() {
-                document.body.classList.toggle('light-mode');
-                if (document.body.classList.contains('light-mode')) {
-                    btn.innerText = "Modo Escuro";
-                } else {
-                    btn.innerText = "Modo Claro";
-                }
-            };
+            btn.onclick = function() { toggleThemeChat(); };
         }
     });
 });
@@ -67,11 +67,36 @@ function toggleChat() {
     w.style.display = (w.style.display === 'flex') ? 'none' : 'flex';
 }
 
-// FUNÇÃO NOVA PARA ENVIAR A SUGESTÃO AO CLICAR
+function toggleThemeChat() {
+    // Essa linha adiciona/remove a classe que o CSS agora reconhece
+    document.body.classList.toggle('light-mode');
+    
+    const isLight = document.body.classList.contains('light-mode');
+    const icon = document.getElementById('themeIcon');
+    
+    if (icon) {
+        if (isLight) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+    }
+
+    // Atualiza botões da página
+    const pageButtons = document.querySelectorAll('.btn-control');
+    pageButtons.forEach(btn => {
+        if(btn.innerText.includes('Modo')) {
+            btn.innerText = isLight ? "Modo Escuro" : "Modo Claro";
+        }
+    });
+}
+
 function sendQuickMsg(text) {
     const input = document.getElementById('userInput');
-    input.value = text; // Coloca o texto no input
-    sendMessage(); // Envia automaticamente
+    input.value = text; 
+    sendMessage(); 
 }
 
 function handleKeyPress(e) { if (e.key === 'Enter') sendMessage(); }
